@@ -1,0 +1,19 @@
+name = "Migrate from GoalFace"
+description = "Module to migrate some goalface tables to the new alert site"
+package = "Development"
+core = 7.x
+
+dependencies[] = taxonomy
+dependencies[] = image
+dependencies[] = comment
+dependencies[] = migrate
+dependencies[] = list
+dependencies[] = number
+features[features_api][] = api:1
+features[taxonomy][] = countries
+features[taxonomy][] = languages
+
+#  include the files that contain your Migrate classes 
+files[] = migrate_goalface.module
+files[] = migrate_goalface.inc
+
